@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+cout<<"Hari ini tanggal"<<__DATE__;
+cout<<endl;
+cout<<"Jam"<<__TIME__;
+return 0;
