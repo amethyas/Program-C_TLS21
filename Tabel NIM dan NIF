@@ -1,0 +1,37 @@
+ #include<iostream>
+ using namespace std;
+ class Mahasiswa
+ {
+     private:
+     int nim[3];
+     int nif[3];
+     public:
+     void read_data();
+     void print_data();  
+ };
+ void Mahasiswa::read_data()
+ {
+     for (int i=0; i<3;i++)     
+    {         
+         cout<<"Masukkan NIU Anda.";         
+         cin>>nim[i];
+         cout<<"Masukkan NIF Anda. ";         
+         cin>>nif[i];
+     }
+ }
+ void Mahasiswa::print_data()
+ {
+     for (int i=0; i<3;i++)
+     {
+         cout<<nim[i]<<"\t"<<nif[i]<<endl;
+     }
+ }
+ int main()
+ {
+     Mahasiswa emp;
+     emp.read_data();
+     cout<<endl<<"Berikut tabel informasi NIM dan NIF Mahasiswa: "<<endl;
+     cout<<endl;
+     cout<<"NIM\tNIF"<<endl;
+     emp.print_data();
+ }
